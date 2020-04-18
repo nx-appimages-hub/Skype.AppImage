@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Network;
+Comment=Skype Internet Telephony
+Exec=AppRun %U
+Icon=icon
+Name=Skype for Linux
+StartupNotify=true
+StartupWMClass=Skype
+Terminal=false
+Type=Application
+X-MultipleArgs=false
+X-KDE-Protocols=skype
