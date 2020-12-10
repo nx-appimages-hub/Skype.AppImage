@@ -13,7 +13,7 @@ PWD:=$(shell pwd)
 
 all:
 	mkdir --parents $(PWD)/build/Boilerplate.AppDir/skypeforlinux
-	./apprepo.AppImage --destination=$(PWD)/build appdir boilerplate libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libatspi2.0-0
+	apprepo --destination=$(PWD)/build appdir boilerplate libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0 libatspi2.0-0
 
 	wget --output-document="$(PWD)/build/build.deb" "https://repo.skype.com/latest/skypeforlinux-64.deb"
 	dpkg -x $(PWD)/build/build.deb $(PWD)/build
